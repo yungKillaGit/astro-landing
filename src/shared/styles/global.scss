@@ -1,0 +1,138 @@
+@import 'fonts';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .text {
+    &-header1,
+    &-header2,
+    &-header3,
+    &-header4,
+    &-header5,
+    &-subhead1,
+    &-button1,
+    &-button2,
+    &-button3 {
+      @apply font-head;
+    }
+
+    &-body1,
+    &-body2,
+    &-caption1,
+    &-caption2,
+    &-link1,
+    &-link2 {
+      @apply font-primary;
+    }
+
+    &-header1 {
+      @apply text-7xl font-medium;
+
+      @screen sm {
+        @apply text-3xl;
+      }
+
+      @screen md {
+        @apply text-5xl;
+      }
+    }
+
+    &-header2 {
+      @apply text-4xl font-semibold;
+
+      @screen sm {
+        @apply text-2xl leading-8;
+      }
+
+      @screen md {
+        @apply text-2xl;
+      }
+    }
+
+    &-header3 {
+      @apply text-3xl font-semibold;
+
+      @screen sm {
+        @apply text-xl;
+      }
+
+      @screen md {
+        @apply text-xl;
+      }
+    }
+
+    &-header4 {
+      @apply text-2xl font-semibold;
+
+      @screen sm {
+        @apply text-2lg;
+      }
+
+      @screen md {
+        @apply text-2lg;
+      }
+    }
+
+    &-header5 {
+      @apply text-xl font-semibold;
+
+      @screen sm {
+        @apply text-lg;
+      }
+
+      @screen md {
+        @apply text-lg;
+      }
+    }
+
+    &-subhead1 {
+      @apply text-2lg;
+
+      @screen sm {
+        @apply text-base;
+      }
+
+      @screen md {
+        @apply text-lg;
+      }
+    }
+
+    &-body1 {
+      @apply text-base;
+    }
+
+    &-body2 {
+      @apply text-xs;
+    }
+
+    &-caption1 {
+      @apply text-2xs;
+    }
+
+    &-caption2 {
+      @apply text-2xs;
+    }
+
+    &-button1 {
+      @apply text-base;
+    }
+
+    &-button2 {
+      @apply text-sm;
+    }
+
+    &-button3 {
+      @apply text-xs;
+    }
+
+    &-link1 {
+      @apply text-base;
+    }
+
+    &-link2 {
+      @apply text-2xs;
+    }
+  }
+}
