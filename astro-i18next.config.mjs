@@ -1,16 +1,14 @@
-import { locales } from './src/shared/lib/i18n';
-
 const config = {
   defaultLanguage: 'ru',
   supportedLanguages: ['ru'],
   i18next: {
     debug: true,
-    resources: {
-      ru: {
-        translation: locales.ru,
-      },
+    initImmediate: false,
+    backend: {
+      loadPath: './src/shared/lib/i18n/locales/{{lng}}.json',
     },
   },
+  i18nextPlugins: { fsBackend: 'i18next-fs-backend' },
 };
 
 export default config;
